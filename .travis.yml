@@ -35,6 +35,16 @@ jobs:
     - os: linux
       dist: xenial
       python: 3.8
+      arch: arm64
+      env: RPY2_CFFI_MODE=ABI
+    - os: linux
+      dist: xenial
+      python: 3.8
+      env: RPY2_CFFI_MODE=API
+    - os: linux
+      dist: xenial
+      python: 3.8
+      arch: arm64
       env: RPY2_CFFI_MODE=API
     - os: osx
       language: generic
